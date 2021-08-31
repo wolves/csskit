@@ -6,7 +6,7 @@ use csskit::*;
 fn main() {
     let long_version = crate::shadow::clap_version();
     let matches = App::new("csskit")
-        .about("A toolkit for inspecting, improving and working with CSS.")
+        .about("A CLI toolkit for inspecting, improving and working with CSS.")
         .version(shadow::PKG_VERSION)
         .long_version(long_version.as_str())
         .author(crate_authors!())
