@@ -1,0 +1,23 @@
+* {
+  color: tomato;
+}
+
+ul {
+  color: tomato;
+}
+
+.selector-A {
+  color: tomato;
+}
+
+#selector-id {
+  color: tomato;
+}
+
+[input="text"] {
+  color: tomato;
+}
+
+[textarea] {
+  color: tomato;
+}
