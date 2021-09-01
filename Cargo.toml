@@ -10,6 +10,7 @@ build = "build.rs"
 clap = "3.0.0-beta.4"
 shadow-rs = "0.7.1"
 walkdir = "2"
+csv = "1.1"
 
 [build-dependencies]
 shadow-rs = "0.7.1"

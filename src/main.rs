@@ -24,6 +24,12 @@ fn main() {
                         .setting(AppSettings::ArgRequiredElseHelp)
                         .setting(AppSettings::ColoredHelp)
                         .arg(
+                            Arg::new("log")
+                                .about("Turn on search result logging to a CSV file")
+                                .short('l')
+                                .long("log"),
+                        )
+                        .arg(
                             Arg::new("query")
                                 .required(true)
                                 .about("The selector query string"),
@@ -43,6 +49,7 @@ fn main() {
                 selectors::search_target(
                     search_matches.value_of("query").unwrap(),
                     search_matches.value_of("target").unwrap(),
+                    search_matches.is_present("log"),
                 );
             }
             _ => unreachable!(),
